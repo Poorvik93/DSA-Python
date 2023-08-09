@@ -1,10 +1,14 @@
 # Python program for implementation of MergeSort
- 
+
+
 # Merges two subarrays of arr[].
 # First subarray is arr[l..m]
 # Second subarray is arr[m+1..r]
+#  mainly work on divid and concer methode
  
- 
+# time complexcity of mergeSort is 
+
+
 def merge(arr, l, m, r):
     n1 = m - l + 1
     n2 = r - m
@@ -76,3 +80,17 @@ mergeSort(arr, 0, n-1)
 print("\n\nSorted array is")
 for i in range(n):
     print("%d" % arr[i],end=" ")
+
+
+
+# basic logicof merge sort  (written by me)
+#  mergesort(l,h)
+# {
+#     if(l<h)
+#     mid =(l+h)/2;
+#     {
+#         mergesort(l,mid);
+#         mergesort(mid+1,h);
+#         merge(l,mid,h);
+#     }
+# }
